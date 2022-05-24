@@ -1,7 +1,14 @@
 # How to Run a Filesystem Check on Windows and Repair System Files
 
 If Windows is freezing or behaving erratically, there might be a problem with
-the filesystem or system files. You can use the built-in
+the filesystem or system files. Examples of erratic behavior include:
+
+- blue screens
+- crashing applications
+- sluggish performance
+- failed Windows updates
+
+You can use the built-in
 [Deployment Image Servicing and Management (DISM)](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/what-is-dism?view=windows-10)
 and System File Checker (SFC) tools to try to fix the problem.
 
