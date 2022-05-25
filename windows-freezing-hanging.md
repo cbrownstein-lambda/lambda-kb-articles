@@ -14,11 +14,11 @@ and System File Checker (SFC) tools to try to fix the problem.
 
 To use the DISM tool to fix problems with the filesystem or system files:
 
-1. In the elevated Command Prompt window, run the command:
 1. Press the **Windows key + R** to open the Run window.
 1. In the Run window, type `cmd` then press **Ctrl + Shift + Enter**.
    This command opens the Command Prompt window with elevated (admin)
    privileges.
+1. In the Command Prompt window, run the command:
    `DISM.exe /Online /Cleanup-Image /RestoreHealth`. This command performs
    cleanup and recovery operations on the system files. For more information,
    see Microsoft's documentation on [repairing a Windows image](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/repair-a-windows-image?view=windows-10).
