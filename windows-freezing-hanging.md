@@ -27,5 +27,14 @@ To use the DISM tool to fix problems with the filesystem or system files:
    replaces corrupted files. For more information, see Microsoft's documentation
    on
    [using SFC to repair missing or corrupted system files](https://support.microsoft.com/en-us/topic/use-the-system-file-checker-tool-to-repair-missing-or-corrupted-system-files-79aa86cb-ca52-166a-92a3-966e85d4094e).
+
+   Run the `sfc /scannow` command up to 3 times until you receive the message:
+   `Windows Resource Protection did not find any integrity violations.`
+
+   **Note**: If after running this command 3 times you do not receive the
+   message `Windows Resource Protection did not find any integrity
+   violations`, it is unlikely that a problem with the filesystem or system
+   files is the cause of Windows freezing or behaving erratically.
+
 1. Reboot the machine and test to see if Windows continues to freeze or behave
    erratically.
