@@ -12,7 +12,7 @@
    You should see `SrcValid-` and not `SrcValid+`. If you see `SrcValid+`,
    then ACS might be enabled.
 
-   **Note**: For machines with more than 256 logical cores, disabling IOMMU
+   **Note:** For machines with more than 256 logical cores, disabling IOMMU
    will cause issues. To avoid these issues:
 
    - On machines with Intel processors, disable HyperThreading.
