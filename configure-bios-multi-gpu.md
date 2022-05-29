@@ -23,4 +23,7 @@
 
      Then run `sudo update-grub`.
 
-1. Make sure that the NVIDIA `peermem` kernel module is loaded.
+1. Make sure that the
+   [nvidia-peermem kernel module](http://download.nvidia.com/XFree86/Linux-x86_64/470.42.01/README/nvidia-peermem.html) is loaded. To do  this, run the following command:
+
+       sudo modprobe nvidia-peermem
