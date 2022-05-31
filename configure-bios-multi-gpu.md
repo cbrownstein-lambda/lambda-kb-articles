@@ -25,9 +25,6 @@
    - On machines with AMD processors, disable Simultaneous Multithreading (SMT)
      in the BIOS.
 
-   On machines with AMD processors, you can alternatively disable SMT by adding
-   to add `/etc/default/grub` the following parameters:
-
-         amd_iommu=on iommu=pt
-
-   Then, run `sudo update-grub`.
+   On machines with AMD processors, you can alternatively disable SMT by first
+   adding `amd_iommu=on iommu=pt` to `/etc/default/grub`, then running
+   `sudo update-grub`.
