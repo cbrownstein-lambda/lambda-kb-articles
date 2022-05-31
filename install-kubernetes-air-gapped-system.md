@@ -46,7 +46,7 @@ does not have a connection to the Internet.
    command in a terminal to install the
    [NVIDIA Container Toolkit](https://catalog.ngc.nvidia.com/orgs/nvidia/teams/k8s/containers/container-toolkit):
 
-       apt install cm-nvidia-container-toolkit
+   `apt install cm-nvidia-container-toolkit`
 
 1. Run the following command:
 
