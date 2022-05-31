@@ -31,7 +31,7 @@ does not have a connection to the Internet.
 
    To apply the patch, run the following command in a terminal:
 
-       patch -b /cm/local/apps/cm-setup/lib/python3.7/site-packages/cmsetup/plugins/kubernetes/questions.py < k8s.patch
+   `patch -b /cm/local/apps/cm-setup/lib/python3.7/site-packages/cmsetup/plugins/kubernetes/questions.py < k8s.patch`
 
 1. Disable Shorewall on the headnodes. To do this, Bright Computing's
    instructions on
