@@ -22,8 +22,8 @@
    To avoid this issue:
 
    - On machines with Intel processors, disable Hyper-Threading in the BIOS.
-   - On machines with AMD processors, disable Simultaneous Multithreading (SMT)
-     in the BIOS.
+   - On machines with AMD processors, disable Simultaneous Multithreading
+     (SMT) in the BIOS.
 
    **Note:** If SMT is needed on a machine with AMD processors, instead of
    disabling SMT in the BIOS, you can add `amd_iommu=on iommu=pt` to
