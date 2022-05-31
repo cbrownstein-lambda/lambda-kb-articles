@@ -11,7 +11,7 @@
 1. Run the following command in a terminal to confirm that ACS has been
    disabled:
 
-       sudo lspci -vvv | grep -i asctl
+       sudo lspci -vvv | grep -i acsctl
 
    You should see `SrcValid-` and not `SrcValid+`. If you see `SrcValid+`,
    then ACS might be enabled.
