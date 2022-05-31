@@ -40,7 +40,7 @@ does not have a connection to the Internet.
 1. Run the following command in a terminal on each headnode to prevent Shorewall
    from reenabling:
 
-       systemctl mask shorewall && systemctl mask shorewall6
+   `systemctl mask shorewall && systemctl mask shorewall6`
 
 1. If you are not using [Run:ai](https://www.run.ai/), run the following
    command in a terminal to install the
