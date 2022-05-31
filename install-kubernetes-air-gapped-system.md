@@ -14,6 +14,7 @@ does not have a connection to the Internet.
 
    To create the patch, run the following command in a terminal:
 
+   <!-- TODO: Fix the below command. -->
    ```
    cat <<END | base64 -d > k8s.patch
    LS0tIC9jbS9sb2NhbC9hcHBzL2NtLXNldHVwL2xpYi9weXRob24zLjcvc2l0ZS1wYWNrYWdlcy9j
