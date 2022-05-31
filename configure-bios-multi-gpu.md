@@ -31,27 +31,3 @@
          amd_iommu=on iommu=pt
 
    Then, run `sudo update-grub`.
-1. Make sure that the
-   [nvidia-peermem kernel module](http://download.nvidia.com/XFree86/Linux-x86_64/470.42.01/README/nvidia-peermem.html) is loaded. To do  this, run the following command:
-
-       sudo modprobe nvidia-peermem
-
-   If you are using
-   [Bright Cluster Manager](https://www.brightcomputing.com/brightclustermanager),
-   you can create the following `systemd` unit file to load `nvidia-peermem`:
-
-   ```
-   [Unit]
-   Description=NVIDIA Peermem Module
-   Wants=syslog.target
-   After=cuda-driver.service
-   ConditionPathExistsGlob=/dev/nvidia[0-9]*
-
-  [Service]
-  Type=oneshot
-  ExecStart=modprobe nvidia-peermem
-  TimeoutSec=300
-
-  [Install]
-  WantedBy=multi-user.target
-  ```
