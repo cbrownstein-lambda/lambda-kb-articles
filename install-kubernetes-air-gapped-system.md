@@ -37,6 +37,8 @@ does not have a connection to the Internet.
    instructions on
    [disabling the Shorewall firewall on the headnode](https://kb.brightcomputing.com/knowledge-base/how-do-i-disable-the-shorewall-firewall-on-the-headnode/).
 
+   <!-- TODO: Preserve Bright Computing's instructions. -->
+
 1. Run the following command in a terminal on each headnode to prevent Shorewall
    from reenabling:
 
