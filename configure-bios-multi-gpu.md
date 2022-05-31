@@ -14,7 +14,7 @@
        sudo lspci -vvv | grep -i acsctl
 
    You should see `SrcValid-` and not `SrcValid+`. If you see `SrcValid+`,
-   then ACS might be enabled.
+   then ACS is enabled.
 
    **Note:** For machines with more than 255 logical cores, disabling IOMMU
    might make the system unable to recognize the additional cores beyond 255.
