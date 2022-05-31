@@ -16,17 +16,21 @@
    You should see `SrcValid-` and not `SrcValid+`. If you see `SrcValid+`,
    then ACS might be enabled.
 
-   **Note:** For machines with more than 256 logical cores, disabling IOMMU
-   will cause issues. To avoid these issues:
+   **Note:** For machines with more than 255 logical cores, disabling the IOMMU
+   might make the system unable to recognize the additional cores beyond 255.
 
-   - On machines with Intel processors, disable HyperThreading.
-   - On machines with AMD processors, add to `/etc/default/grub` the following
-     parameters:
+   To avoid this issue:
+
+   - On machines with Intel processors, disable Hyper-Threading in the BIOS.
+   - On machines with AMD processors, disable Simultaneous Multithreading (SMT)
+     in the BIOS.
+
+   On machines with AMD processors, you can alternatively disable SMT by adding
+   to add `/etc/default/grub` the following parameters:
 
          amd_iommu=on iommu=pt
 
-     Then run `sudo update-grub`.
-
+   Then, run `sudo update-grub`.
 1. Make sure that the
    [nvidia-peermem kernel module](http://download.nvidia.com/XFree86/Linux-x86_64/470.42.01/README/nvidia-peermem.html) is loaded. To do  this, run the following command:
 
