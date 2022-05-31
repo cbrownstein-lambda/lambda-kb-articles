@@ -1,8 +1,12 @@
 # Configuring BIOS for Multi-GPU / Distributed / GPUDirect Training
 
 1. Disable PCI Access Control Services (ACS). This can usually be accomplished
-   by disabling IOMMU in the BIOS. How to do this varies from manufacturer to
-   manufacturer.
+   by disabling the IOMMU in the BIOS. The location in the BIOS to disable the
+   IOMMU depends on your Lambda
+   [Vector](https://lambdalabs.com/gpu-workstations/vector),
+   [Scalar](https://lambdalabs.com/products/blade), or
+   [Hyperplane](https://lambdalabs.com/deep-learning/servers/hyperplane-a100)
+   model.
 
 1. Run the following command in a terminal to confirm that ACS has been
    disabled:
